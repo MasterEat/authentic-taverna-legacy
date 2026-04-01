@@ -1,40 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="el">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ταβέρνα "Ο Γιώργος" | Παραδοσιακή Ελληνική Κουζίνα Από το 1990</title>
-    <meta name="description" content="Η Ταβέρνα Ο Γιώργος προσφέρει αυθεντική ελληνική κουζίνα και ζεστή φιλοξενία από το 1990. Παραδοσιακές συνταγές, φρέσκα υλικά και γνήσιες γεύσεις." />
-    <meta name="keywords" content="παραδοσιακή ταβέρνα, ελληνική κουζίνα, παραδοσιακό φαγητό, ελληνικό εστιατόριο, ταβέρνα από το 1990" />
-    <link rel="canonical" href="https://taverna-giorgos.gr/" />
-    <meta property="og:title" content='Ταβέρνα "Ο Γιώργος" | Παραδοσιακή Ελληνική Κουζίνα' />
-    <meta property="og:description" content="Αυθεντική ελληνική κουζίνα και ζεστή φιλοξενία από το 1990." />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="el_GR" />
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Restaurant",
-      "name": "Ταβέρνα Ο Γιώργος",
-      "description": "Παραδοσιακή ελληνική ταβέρνα με σπιτικές συνταγές από το 1990",
-      "url": "https://taverna-giorgos.gr",
-      "telephone": "+30 210 1234567",
-      "email": "info@taverna-giorgos.gr",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Οδός Παραδείγματος 42",
-        "addressLocality": "[Πόλη/Περιοχή]",
-        "postalCode": "12345",
-        "addressCountry": "GR"
-      },
-      "servesCuisine": "Greek",
-      "priceRange": "€€",
-      "foundingDate": "1990"
-    }
-    </script>
+    <title>Ταβέρνα Ο Γιώργος | Αυθεντικές Ελληνικές Γεύσεις</title>
+    <meta name="description" content="Αυθεντικές ελληνικές γεύσεις και φιλοξενία από το 1990." />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <header class="site-header" id="top">
+      <nav class="container nav">
+        <a href="#hero" class="brand" aria-label="Αρχική σελίδα">
+          <span class="brand-title">Ο Γιώργος</span>
+          <span class="brand-sub">Ταβέρνα · Από το 1990</span>
+        </a>
+        <button class="menu-toggle" aria-label="Άνοιγμα μενού" aria-expanded="false">☰</button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#hero">Αρχική</a></li>
+          <li><a href="#about-hero">Σχετικά</a></li>
+          <li><a href="#menu-hero">Μενού</a></li>
+          <li><a href="#gallery-hero">Gallery</a></li>
+          <li><a href="#contact-hero">Επικοινωνία</a></li>
+        </ul>
+        <a href="tel:+302101234567" class="btn btn-outline">Κράτηση</a>
+      </nav>
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="#hero">Αρχική</a><a href="#about-hero">Σχετικά</a><a href="#menu-hero">Μενού</a><a href="#gallery-hero">Gallery</a><a href="#contact-hero">Επικοινωνία</a><a href="tel:+302101234567" class="btn">Κράτηση Τώρα</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="hero"><img src="./assets/hero-tavern.jpg" alt="Ταβέρνα Ο Γιώργος - Αυλή με παραδοσιακά ελληνικά πιάτα κάτω από ελιές" /><div class="overlay"></div><div class="container hero-content"><p class="eyebrow">Από το 1990</p><h1>Αυθεντικές Ελληνικές<br><span>Γεύσεις &amp; Φιλοξενία</span></h1><p class="lead">Παραδοσιακές σπιτικές συνταγές, φρέσκα τοπικά υλικά και η ζεστασιά μιας οικογενειακής ταβέρνας που σερβίρει με αγάπη εδώ και τρεις δεκαετίες.</p><div class="cta"><a href="#menu-hero" class="btn btn-accent">Δείτε το Μενού</a><a href="tel:+302101234567" class="btn btn-outline">Κράτηση Τραπεζιού</a></div></div></section>
+      <section class="section story"><div class="container two-col"><div><p class="eyebrow dark">Η Ιστορία μας</p><h2>Μια Οικογενειακή Παράδοση<br><span>Τριών Δεκαετιών</span></h2><p>Από το 1990, η ταβέρνα «Ο Γιώργος» υποδέχεται κάθε επισκέπτη σαν μέλος της οικογένειάς μας. Με σεβασμό στην παράδοση και αγάπη για τη γνήσια ελληνική κουζίνα, σερβίρουμε πιάτα που θυμίζουν σπίτι.</p><p>Φρέσκα υλικά από τοπικούς παραγωγούς, συνταγές που περνούν από γενιά σε γενιά και μια ατμόσφαιρα που σε κάνει να νιώθεις ότι ανήκεις εδώ.</p><a href="#about-hero" class="btn btn-primary">Μάθετε Περισσότερα</a></div><div class="image-box"><img src="./assets/tavern-interior.jpg" alt="Εσωτερικός χώρος ταβέρνας με πέτρινους τοίχους και ζεστό φωτισμό" /><div class="badge"><strong>35+</strong><span>Χρόνια Παράδοσης</span></div></div></div></section>
+      <section class="section dishes alt"><div class="container"><p class="eyebrow dark center">Οι Γεύσεις μας</p><h2 class="center">Αγαπημένα Πιάτα</h2><p class="center lead dark">Μερικά από τα πιάτα που αγαπούν οι επισκέπτες μας εδώ και χρόνια – μαγειρεμένα κάθε μέρα με φρέσκα υλικά.</p><div class="cards four"><article class="card"><img src="./assets/dish-moussaka.jpg" alt="Σπιτικός μουσακάς με μπεσαμέλ"><h3>Μουσακάς Σπιτικός</h3><p>Στρώσεις μελιτζάνας, κιμά μοσχαρίσιου και κρεμώδους μπεσαμέλ, ψημένος στον φούρνο με αγάπη.</p></article><article class="card"><img src="./assets/dish-lamb.jpg" alt="Αρνίσια παϊδάκια στη σχάρα με λεμόνι"><h3>Παϊδάκια στη Σχάρα</h3><p>Ζουμερά αρνίσια παϊδάκια ψημένα στα κάρβουνα με λεμόνι, ρίγανη και φρέσκο δεντρολίβανο.</p></article><article class="card"><img src="./assets/dish-salad.jpg" alt="Χωριάτικη σαλάτα με φέτα"><h3>Χωριάτικη Σαλάτα</h3><p>Ντομάτα, αγγούρι, πιπεριά, κρεμμύδι, ελιές Καλαμάτας και χοντρό κομμάτι φέτας με εξαιρετικό παρθένο ελαιόλαδο.</p></article><article class="card"><img src="./assets/dish-octopus.jpg" alt="Χταπόδι ψητό στη σχάρα"><h3>Χταπόδι Σχάρας</h3><p>Τρυφερό χταπόδι ψημένο αργά στα κάρβουνα, σερβιρισμένο με λαδολέμονο και κάπαρη.</p></article></div><p class="center mt"><a href="#menu-hero" class="btn btn-primary">Δείτε Όλο το Μενού</a></p></div></section>
+      <section class="section"><div class="container"><p class="eyebrow dark center">Γιατί Εμάς</p><h2 class="center">Αυτά που μας Ξεχωρίζουν</h2><div class="cards four plain"><article><h3>Παραδοσιακές Συνταγές</h3><p>Συνταγές τριών γενεών, μαγειρεμένες με τον ίδιο τρόπο που μας δίδαξαν οι γιαγιάδες μας.</p></article><article><h3>Φρέσκα Υλικά</h3><p>Προμηθευόμαστε καθημερινά από τοπικούς παραγωγούς — λαχανικά, κρέατα, ψάρια και τυριά.</p></article><article><h3>Ζεστή Φιλοξενία</h3><p>Κάθε επισκέπτης γίνεται μέλος της οικογένειάς μας. Αυτό πιστεύουμε από το 1990.</p></article><article><h3>Από το 1990</h3><p>Πάνω από τρεις δεκαετίες εμπειρίας στην αυθεντική ελληνική κουζίνα και φιλοξενία.</p></article></div></div></section>
+      <section class="section alt"><div class="container"><p class="eyebrow dark center">Στιγμιότυπα</p><h2 class="center">Ο Χώρος &amp; οι Γεύσεις μας</h2><div class="gallery-grid"> <img src="./assets/tavern-outdoor.jpg" alt="Αυλή ταβέρνας με βουκαμβίλιες το βράδυ" class="big"> <img src="./assets/dish-salad.jpg" alt="Φρέσκια χωριάτικη σαλάτα"> <img src="./assets/dish-lamb.jpg" alt="Παϊδάκια αρνίσια στη σχάρα"> <img src="./assets/tavern-interior.jpg" alt="Εσωτερικός χώρος ταβέρνας" class="wide"> <img src="./assets/dish-moussaka.jpg" alt="Σπιτικός μουσακάς"> <img src="./assets/dish-octopus.jpg" alt="Χταπόδι σχάρας"> </div><p class="center mt"><a href="#gallery-hero" class="btn btn-secondary">Δείτε το Gallery</a></p></div></section>
+      <section class="section reservation"><img src="./assets/tavern-outdoor.jpg" alt="Βραδινή ατμόσφαιρα στην ταβέρνα"><div class="overlay"></div><div class="container center-box"><p class="eyebrow">Κλείστε Τραπέζι</p><h2>Κρατήστε τη Θέση σας<br><span>στην Παράδοση</span></h2><p class="lead">Κρατήστε ένα τραπέζι και απολαύστε αυθεντικές ελληνικές γεύσεις σε μια ζεστή, παραδοσιακή ατμόσφαιρα. Σας περιμένουμε!</p><div class="cta"><a href="tel:+302101234567" class="btn btn-accent">Καλέστε: 210 1234567</a><a href="#contact-hero" class="btn btn-outline">Φόρμα Επικοινωνίας</a></div></div></section>
+      <section class="section"><div class="container"><p class="eyebrow dark center">Κριτικές</p><h2 class="center">Τι Λένε οι Επισκέπτες μας</h2><div class="cards three"><article class="card quote"><p>★★★★★</p><blockquote>"Η καλύτερη ταβέρνα στην περιοχή! Ο μουσακάς θυμίζει σπίτι και η φιλοξενία είναι πάντα εξαιρετική. Ερχόμαστε κάθε Σαββατοκύριακο."</blockquote><footer>— Μαρία Κ.</footer></article><article class="card quote"><p>★★★★★</p><blockquote>"Φανταστικά παϊδάκια, φρέσκα ψάρια και ανεπανάληπτη ατμόσφαιρα. Αξίζει κάθε ευρώ. Σίγουρα η πιο αυθεντική ελληνική εμπειρία."</blockquote><footer>— Νίκος Π.</footer></article><article class="card quote"><p>★★★★★</p><blockquote>"We discovered this gem during our trip to Greece and it was the highlight of our vacation. Authentic food, warm people, beautiful setting. A must-visit!"</blockquote><footer>— Elena R.</footer></article></div></div></section>
+      <section class="section alt"><div class="container"><p class="eyebrow dark center">Βρείτε μας</p><h2 class="center">Επικοινωνία &amp; Τοποθεσία</h2><div class="two-col"><div><p><strong>Διεύθυνση:</strong> Οδός Παραδείγματος 42, [Πόλη/Περιοχή], Ελλάδα</p><p><strong>Τηλέφωνο:</strong> <a href="tel:+302101234567">+30 210 1234567</a></p><p><strong>Email:</strong> <a href="mailto:info@taverna-giorgos.gr">info@taverna-giorgos.gr</a></p><p><strong>Ωράριο:</strong> Δευτέρα – Κυριακή: 12:00 – 00:00</p></div><div class="map">Χάρτης Google Maps<br><small>Αντικαταστήστε με Google Maps iframe</small></div></div></div></section>
+
+      <section class="page-hero" id="about-hero"><img src="./assets/tavern-interior.jpg" alt="Εσωτερικός χώρος ταβέρνας"><div class="overlay"></div><div class="container center-box"><p class="eyebrow">Από το 1990</p><h1>Η Ιστορία μας</h1></div></section>
+      <section class="section"><div class="container narrow"><p>Η ιστορία της ταβέρνας «Ο Γιώργος» ξεκινά το 1990, όταν ο Γιώργος και η Ελένη άνοιξαν ένα μικρό μαγαζί στην καρδιά της [Πόλη/Περιοχή] με ένα απλό όραμα: να σερβίρουν φαγητό όπως στο σπίτι τους.</p><p>Με συνταγές που κληρονόμησαν από τις μητέρες και τις γιαγιάδες τους, ξεκίνησαν να μαγειρεύουν πιάτα γεμάτα αγάπη, μνήμες και γνήσια ελληνική γεύση. Σύντομα, η ταβέρνα έγινε σημείο αναφοράς στην περιοχή.</p><img src="./assets/tavern-outdoor.jpg" alt="Αυλή της ταβέρνας με βουκαμβίλιες" class="full"><h2>Μια Οικογένεια, Μια Παράδοση</h2><p>Σήμερα, η δεύτερη γενιά συνεχίζει με τον ίδιο ζήλο. Τα παιδιά του Γιώργου μεγάλωσαν μέσα στην κουζίνα, έμαθαν τα μυστικά κάθε συνταγής και σέβονται βαθιά την παράδοση που κληρονόμησαν.</p><p>Κάθε μέρα, προμηθευόμαστε φρέσκα υλικά από τοπικούς παραγωγούς — λαχανικά από κήπους της περιοχής, κρέατα από κτηνοτρόφους που γνωρίζουμε προσωπικά, ψάρια φρεσκοψαρεμένα και τυριά από τοπικά τυροκομεία.</p><h2>Η Φιλοσοφία μας</h2><p>Πιστεύουμε ότι το καλό φαγητό δεν χρειάζεται πολυπλοκότητα. Χρειάζεται σεβασμό στα υλικά, υπομονή στη μαγειρική και χαρά στη φιλοξενία. Αυτός είναι ο τρόπος μας.</p><p>Σας περιμένουμε να μοιραστούμε μαζί σας ένα τραπέζι γεμάτο γεύσεις, χρώματα και αρώματα — ακριβώς όπως θα κάναμε στο δικό μας σπίτι.</p></div></section>
+
+      <section class="page-hero solid" id="menu-hero"><div class="container center-box"><p class="eyebrow">Οι Γεύσεις μας</p><h1>Μενού</h1><p class="lead">Παραδοσιακές ελληνικές συνταγές, μαγειρεμένες καθημερινά με φρέσκα υλικά από τοπικούς παραγωγούς.</p></div></section>
+      <section class="section"><div class="container narrow menu-list">
+        <h3>Ορεκτικά</h3><p>Τζατζίκι Σπιτικό — €5</p><p>Τυροκροκέτες — €7</p><p>Σαγανάκι Φέτα — €8</p><p>Χταποδάκι Ξιδάτο — €9</p><p>Ντολμαδάκια — €6</p>
+        <h3>Σαλάτες</h3><p>Χωριάτικη — €8</p><p>Ρόκα Παρμεζάνα — €9</p><p>Σαλάτα του Σεφ — €10</p>
+        <h3>Κρεατικά</h3><p>Μουσακάς Σπιτικός — €12</p><p>Μπιφτέκια Σχάρας — €11</p><p>Κοκκινιστό Μοσχάρι — €14</p><p>Αρνί Κλέφτικο — €16</p>
+        <h3>Σχάρας</h3><p>Παϊδάκια Αρνίσια — €16</p><p>Κοτόπουλο Σχάρας — €11</p><p>Μπριζόλα Χοιρινή — €13</p><p>Σουβλάκι Κοτόπουλο — €10</p>
+        <h3>Μαγειρευτά</h3><p>Γεμιστά — €10</p><p>Φασολάκια Λαδερά — €9</p><p>Γίγαντες Φούρνου — €9</p>
+        <h3>Θαλασσινά</h3><p>Χταπόδι Σχάρας — €16</p><p>Γαρίδες Σαγανάκι — €15</p><p>Ψάρι Ημέρας — € κατά βάρος</p><p>Καλαμαράκια Τηγανητά — €12</p>
+        <h3>Επιδόρπια</h3><p>Μπακλαβάς — €6</p><p>Γαλακτομπούρεκο — €6</p><p>Γιαούρτι με Μέλι — €5</p>
+        <h3>Ποτά &amp; Κρασιά</h3><p>Κρασί Χύμα (500ml) — €7</p><p>Ούζο — €5</p><p>Τσίπουρο — €5</p><p>Μπύρα — €4</p><p>Αναψυκτικά — €3</p>
+      </div></section>
+
+      <section class="page-hero solid" id="gallery-hero"><div class="container center-box"><p class="eyebrow">Στιγμιότυπα</p><h1>Gallery</h1><p class="lead">Εικόνες από τον χώρο μας, τα πιάτα μας και τις στιγμές που μοιραζόμαστε με τους επισκέπτες μας.</p></div></section>
+      <section class="section"><div class="container"><div class="gallery-grid"> <img src="./assets/hero-tavern.jpg" alt="Αυλή ταβέρνας με ελιές και σερβιρισμένα τραπέζια" class="big"> <img src="./assets/dish-moussaka.jpg" alt="Σπιτικός μουσακάς"> <img src="./assets/dish-salad.jpg" alt="Χωριάτικη σαλάτα με φέτα"> <img src="./assets/tavern-interior.jpg" alt="Εσωτερικός χώρος ταβέρνας" class="wide"> <img src="./assets/dish-lamb.jpg" alt="Αρνίσια παϊδάκια σχάρας"> <img src="./assets/dish-octopus.jpg" alt="Χταπόδι ψητό στη σχάρα"> <img src="./assets/tavern-outdoor.jpg" alt="Εξωτερική αυλή ταβέρνας το βράδυ" class="wide"> <img src="./assets/dish-baklava.jpg" alt="Σπιτικός μπακλαβάς με φιστίκια"> </div></div></section>
+
+      <section class="page-hero solid" id="contact-hero"><div class="container center-box"><p class="eyebrow">Επικοινωνήστε μαζί μας</p><h1>Επικοινωνία</h1><p class="lead">Κλείστε τραπέζι τηλεφωνικά ή στείλτε μας μήνυμα. Σας περιμένουμε!</p></div></section>
+      <section class="section"><div class="container two-col"><div><h2>Στοιχεία Επικοινωνίας</h2><p><strong>Διεύθυνση:</strong> Οδός Παραδείγματος 42, [Πόλη/Περιοχή], Ελλάδα</p><p><strong>Τηλέφωνο Κράτησης:</strong> <a href="tel:+302101234567">+30 210 1234567</a></p><p><strong>Email:</strong> <a href="mailto:info@taverna-giorgos.gr">info@taverna-giorgos.gr</a></p><p><strong>Ωράριο Λειτουργίας:</strong> Δευτέρα – Κυριακή: 12:00 – 00:00</p><div class="map">Google Maps<br><small>Αντικαταστήστε με iframe χάρτη</small></div></div><div><h2>Στείλτε μας Μήνυμα</h2><form class="contact-form"><label>Ονοματεπώνυμο *<input required type="text" placeholder="Το όνομά σας"></label><div class="two"><label>Email<input type="email" placeholder="email@example.com"></label><label>Τηλέφωνο<input type="tel" placeholder="+30 ..."></label></div><label>Μήνυμα *<textarea required rows="5" placeholder="Γράψτε το μήνυμά σας ή ζητήστε κράτηση..."></textarea></label><button class="btn btn-primary" type="submit">Αποστολή Μηνύματος</button><p class="submit-msg" hidden>Ευχαριστούμε! Το μήνυμά σας στάλθηκε. Θα επικοινωνήσουμε μαζί σας σύντομα.</p></form></div></div></section>
+    </main>
+
+    <footer class="site-footer"><div class="container footer-grid"><div><h3>Ο Γιώργος</h3><p>Ταβέρνα · Από το 1990</p><p>Αυθεντικές ελληνικές γεύσεις, ζεστή φιλοξενία και σπιτικές συνταγές τριών γενεών.</p></div><div><h4>Πλοήγηση</h4><p><a href="#hero">Αρχική</a></p><p><a href="#about-hero">Η Ιστορία μας</a></p><p><a href="#menu-hero">Μενού</a></p><p><a href="#gallery-hero">Gallery</a></p><p><a href="#contact-hero">Επικοινωνία</a></p></div><div><h4>Επικοινωνία</h4><p>Οδός Παραδείγματος 42,<br>[Πόλη/Περιοχή], Ελλάδα</p><p><a href="tel:+302101234567">+30 210 1234567</a></p><p><a href="mailto:info@taverna-giorgos.gr">info@taverna-giorgos.gr</a></p></div><div><h4>Ωράριο</h4><p>Δευτέρα – Κυριακή<br>12:00 – 00:00</p><a href="tel:+302101234567" class="btn btn-accent">Κράτηση</a></div></div><div class="container footer-bottom"><p>© <span id="year"></span> Ταβέρνα "Ο Γιώργος". Με επιφύλαξη παντός δικαιώματος.</p></div></footer>
+
+    <script src="./scripts.js"></script>
   </body>
 </html>
